@@ -1,0 +1,39 @@
+:root {
+    --main-bg: rgba(255, 255, 255, 1);
+    --secondary-bg: rgba(34, 34, 34, 1);
+    --button-bg: rgba(254, 209, 54, 1);
+    --form-bg: rgba(204, 204, 204, 1);
+    /* ------------------------ */
+    --logo-colour: rgba(254, 209, 54, 1);
+    --icon-colour: rgba(254, 209, 54, 1);
+    --nav-colour: rgba(254, 209, 54, 1);
+    --main-title-colour: rgba(34, 34, 34, 1);
+    --secondary-title-colour: rgba(255, 255, 255, 1);
+    --subtitle-colour: rgba(34, 34, 34, 1);
+    --service-text-colour: rgba(119, 119, 119, 1);
+    --form-text-colour: rgba(187, 187, 187, 1);
+    --button-text-colour: rgba(255, 255, 255, 1);
+}
+:root{
+    --first-family: "Montserrat", sans-serif;
+    --second-family: "RobotoSlab", sans-serif;
+    --third-family: "DroidSerif", sans-serif;
+    --fourth-family: "Bilbo Swash Caps", sans-serif;
+}
+
+.container{
+    width: 942px; 
+    margin: 0 auto;
+}
+.header{
+    padding-top: 44px;
+
+}
+.services{
+    padding-top: 109px;
+    padding-bottom: 119px;
+}
+.contact{
+    padding-top: 92px ;
+    padding-bottom: 115px; ;
+}
