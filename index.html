@@ -7,8 +7,11 @@
   <title>Golden Services</title>
   <link href="./css/normalize.css" rel="stylesheet" />
   <link href="./css/style.css" rel="stylesheet" />
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet" />
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto+Slab:wght@100..900&display=swap"
+    rel="stylesheet" />
   <link href="https://fonts.googleapis.com/css2?family=Bilbo+Swash+Caps&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Droid+Serif" />
 </head>
@@ -73,21 +76,31 @@
     </section>
 
     <section class="contact">
-      <div class="container">
+      <div class="container contact-container">
         <h2 class="contact-title">CONTACT US</h2>
         <form class="contact-form" name="contact_us_form">
-          <label class="contact-label">
-            <input type="text" placeholder="YOUR NAME*" class="contact-input" />
-          </label>
-          <label class="contact-label">
-            <input type="email" placeholder="YOUR E-MAIL*" class="contact-input" />
-          </label>
-          <label class="contact-label">
-            <input type="text" placeholder="SUBJECT" class="contact-input" />
-          </label>
+          <ul class="contact-form-list">
+            <li class="contact-form-item">
+              <label class="content-label">
+                <input type="text" placeholder="YOUR NAME*" class="contact-input" />
+              </label>
+            </li>
+            <li class="contact-form-item">
+              <label class="content-label">
+                <input type="email" placeholder="YOUR E-MAIL*" class="contact-input" />
+              </label>
+            </li>
+            <li class="contact-form-item">
+              <label class="content-label">
+                <input type="text" placeholder="SUBJECT" class="contact-input" />
+              </label>
+            </li>
+          </ul>
           <textarea class="contact-textarea" placeholder="YOUR MESSAGE*"></textarea>
-          <button type="submit" class="contact-button">SEND MESSAGE</button>
         </form>
+        <button type="submit" class="contact-button" class="footer-button">
+          SEND MESSAGE
+        </button>
       </div>
     </section>
   </main>
