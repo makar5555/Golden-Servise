@@ -3,7 +3,6 @@
     --secondary-bg: rgba(34, 34, 34, 1);
     --button-bg: rgba(254, 209, 54, 1);
     --form-bg: rgba(204, 204, 204, 1);
-    /* ------------------------ */
     --logo-colour: rgba(254, 209, 54, 1);
     --icon-colour: rgba(254, 209, 54, 1);
     --nav-colour: rgba(254, 209, 54, 1);
@@ -13,27 +12,164 @@
     --service-text-colour: rgba(119, 119, 119, 1);
     --form-text-colour: rgba(187, 187, 187, 1);
     --button-text-colour: rgba(255, 255, 255, 1);
-}
-:root{
     --first-family: "Montserrat", sans-serif;
     --second-family: "RobotoSlab", sans-serif;
     --third-family: "DroidSerif", sans-serif;
     --fourth-family: "Bilbo Swash Caps", sans-serif;
 }
-
+body{
+    font-size: 14px;
+    font-family: var(--first-family);
+}
 .container{
     width: 942px; 
     margin: 0 auto;
 }
 .header{
     padding-top: 44px;
-
 }
-.services{
+.header-container{
+    display: flex;
+    justify-content: space-between;
+}
+.header-list{
+    display: flex;
+    gap: 10px;
+}
+.header-link{
+    color: var(--nav-colour);
+    text-transform: uppercase;
+    text-decoration: none;
+    font-family: var(--first-family);
+}
+.header-logo{
+    font-family: var(--fourth-family);
+    text-decoration: none;
+    color: var(--logo-colour);
+    font-size: 36px;
+}
+.services {
     padding-top: 109px;
     padding-bottom: 119px;
+    padding-left: 4px;
+    padding-right: 4px;
 }
-.contact{
-    padding-top: 92px ;
-    padding-bottom: 115px; ;
+
+.services-title {
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 75px;
+    letter-spacing: -1px;
+    color: var(--services-title);
+    text-align: center;
+    padding-bottom: 87.5px;
+}
+
+.services-list {
+    display: flex;
+    gap: 56px;
+    text-align: center;
+}
+
+.services-item {
+    display: flex;
+    flex-direction: column;
+}
+
+.services-subtitle {
+    font-size: 18px;
+    line-height: 75px;
+    font-weight: 700;
+    letter-spacing: -0.45px;
+}
+
+.services-description {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 100%;
+    letter-spacing: -0.35;
+    font-family: var(--second-family);
+    color: var(--service-text-colour);
+}
+
+.services-img {
+    margin: 0 auto;
+}
+.contact {
+    padding-top: 92px;
+    padding-bottom: 115px;
+    background-color: var(--secondary-bg);
+}
+
+.contact-title {
+    color: var(--button-text-colour);
+    padding-top: 92px;
+    padding-bottom: 114px;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 100%;
+    letter-spacing: -1px;
+}
+
+.contact-form {
+    display: flex;
+    gap: 28px;
+    align-items: center;
+    padding-bottom: 27px;
+}
+
+.contact-form-list {
+    display: flex;
+    gap: 28px;
+    flex-direction: column;
+}
+
+.contact-input {
+    color: var(--form-text-colour);
+    padding: 14px 303px 22px 21px;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 100%;
+    letter-spacing: -0.35px;
+    border: 1px solid;
+    border-radius: 3px;
+    border-color: var(--form-text-colour);
+}
+
+input{
+    color: var(--form-text-colour);
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 100%;
+    letter-spacing: -0.35px;
+}
+
+.contact-textarea {
+    font-size: 14px;
+    color: var(--form-text-colour);
+    line-height: 100%;
+    letter-spacing: -0.35px;
+    font-weight: 700;
+    white-space: nowrap;
+}
+
+.contact-textarea {
+    padding: 14px 310px 181px 20px;
+    border: 1px solid;
+    border-color: var(--form-text-colour);
+    border-radius: 2px;
+}
+.contact-button{
+    margin: 0 auto;
+    background-color: var(--logo-colour);
+    color: var(--secondary-title-colour);
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 100%;
+    padding: 18px 33px 28px 33px;
+    border: none;
+    border-radius: 3px;
+    display: flex;
+    justify-content: center;
 }
