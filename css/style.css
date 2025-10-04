@@ -1,0 +1,202 @@
+
+:root {
+    --font-family: "Montserrat", sans-serif;
+    --second-family: "RobotoSlab", sans-serif;
+    --third-family: "DroidSerif", sans-serif;
+    --other-family: "Bilbo Swash Caps", sans-serif;
+    --header-text: rgba(254, 209, 54, 1);
+    --services-title: rgba(34, 34, 34, 1);
+    --services-description: rgba(119, 119, 119, 1);
+    --contact-title: rgba(255, 255, 255, 1);
+    --placeholder-color: rgba(187, 187, 187, 1);
+    --button-color: rgba(254, 209, 54, 1);
+}
+
+body {
+    background-color: var(--contact-title);
+    font-family: var(--font-family);
+}
+
+.container {
+    width: 942px;
+    margin: 0 auto;
+}
+
+.header {
+    padding-top: 44px;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-logo {
+    font-family: var(--other-family);
+    font-size: 36px;
+    line-height: 41px;
+    font-weight: 400;
+    letter-spacing: 1.3px;
+    color: var(--header-text);
+}
+
+.header-navigation-list {
+    display: flex;
+    gap: 10px;
+}
+
+.header-navigation-link {
+    color: var(--header-text);
+    font-size: 14px;
+    line-height: 41px;
+    font-weight: 400;
+    font-size: 14px;
+    letter-spacing: 0;
+    padding: 10px;
+}
+
+.services {
+    padding-top: 109px;
+    padding-bottom: 119px;
+}
+
+.services-title {
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 75px;
+    letter-spacing: -1px;
+    color: var(--services-title);
+    text-align: center;
+    padding-bottom: 87.5px;
+}
+
+.services-list {
+    display: flex;
+    gap: 56px;
+    text-align: center;
+}
+
+.services-item {
+    display: flex;
+    flex-direction: column;
+}
+
+.services-icon {
+    fill: var(--header-text);
+    padding: 13px;
+    border: 3px solid var(--header-text);
+    border-radius: 100%;
+    width: 70px;
+    height: 69px;
+    margin: 0 auto;
+}
+
+.services-subtitle {
+    font-size: 18px;
+    line-height: 75px;
+    font-weight: 700;
+    letter-spacing: -0.45px;
+}
+
+.services-description {
+    font-size: 14px;
+    font-weight: 400;
+    font-family: var(--second-family);
+    color: var(--services-description);
+}
+
+.services-span {
+    font-size: 38px;
+    border: 1px solid var(--header-text);
+    border-radius: 100%;
+    padding: 14px;
+}
+
+.contact-container {
+    display: flex;
+    flex-direction: column;
+    gap: 27px;
+}
+
+.contact {
+    padding-top: 92px;
+    padding-bottom: 115px;
+    background-color: var(--services-title);
+}
+
+.contact-title {
+    color: var(--contact-title);
+    padding-top: 92px;
+    padding-bottom: 114px;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 700;
+    letter-spacing: -1px;
+}
+
+.contact-form {
+    display: flex;
+    gap: 27px;
+    align-items: center;
+}
+
+.contact-wrapper {
+    display: flex;
+    gap: 27px;
+    align-items: center;
+}
+
+.contact-form-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 27px;
+}
+
+.contact-input {
+    color: var(--placeholder-color);
+    padding: 12px 310px 21px 20px;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: -0.35px;
+    border: 1px solid;
+    border-radius: 3px;
+    border-color: var(--placeholder-color);
+}
+
+input::placeholder {
+    color: var(--placeholder-color);
+    color: var(--placeholder-color);
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: -0.35px;
+}
+
+.contact-textarea::placeholder {
+    font-size: 14px;
+    color: var(--placeholder-color);
+    letter-spacing: -0.35px;
+    font-weight: 700;
+    white-space: nowrap;
+}
+
+.contact-textarea {
+    padding: 14px 286px 181px 22px;
+    border: 1px solid;
+    border-color: var(--placeholder-color);
+    border-radius: 2px;
+    resize: none;
+}
+
+.send-button {
+    margin: 0 auto;
+    background-color: var(--header-text);
+    color: var(--contact-title);
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 0px;
+    padding: 18px 33px 28px 33px;
+    border: 0;
+    cursor: pointer;
+    margin-top: 27px;
+}
