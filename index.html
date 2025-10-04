@@ -5,7 +5,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Golden Services</title>
-  <link href="./css/normalize.css" rel="stylesheet" />
+  <link rel="stylesheet" href="./css/normalize.css" />
   <link href="./css/style.css" rel="stylesheet" />
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
     rel="stylesheet" />
@@ -13,7 +13,6 @@
     href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto+Slab:wght@100..900&display=swap"
     rel="stylesheet" />
   <link href="https://fonts.googleapis.com/css2?family=Bilbo+Swash+Caps&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Droid+Serif" />
 </head>
 
 <body class="body">
@@ -21,19 +20,21 @@
     <div class="container header-container">
       <a href="" class="header-logo">Golden</a>
       <nav class="header-navigation">
-        <ul class="header-list">
-          <li class="header-item"><a href="" class="header-link">HOME</a></li>
-          <li class="header-item">
-            <a href="" class="header-link">SERVICES</a>
+        <ul class="header-navigation-list">
+          <li class="header-navigation-item">
+            <a href="" class="header-navigation-link">HOME</a>
           </li>
-          <li class="header-item">
-            <a href="" class="header-link">PORTFOLIO</a>
+          <li class="header-navigation-item">
+            <a href="" class="header-navigation-link">SERVICES</a>
           </li>
-          <li class="header-item">
-            <a href="" class="header-link">ABOUT</a>
+          <li class="header-navigation-item">
+            <a href="" class="header-navigation-link">PORTFOLIO</a>
           </li>
-          <li class="header-item">
-            <a href="" class="header-link">CONTACT</a>
+          <li class="header-navigation-item">
+            <a href="" class="header-navigation-link">ABOUT</a>
+          </li>
+          <li class="header-navigation-item">
+            <a href="" class="header-navigation-link">CONTACT</a>
           </li>
         </ul>
       </nav>
@@ -45,7 +46,9 @@
         <h2 class="services-title">SERVICES</h2>
         <ul class="services-list">
           <li class="services-item">
-            <svg class="services-img" width="39" heigth="38"><use href="./image/symbol-defs.svg#icon-cest"></use></svg>
+            <svg class="services-icon">
+              <use href="./image/symbol-defs.svg#icon-cest">
+            </svg>
             <h3 class="services-subtitle">E-Commerce</h3>
             <p class="services-description">
               Proin iaculis purus consequat sem cure digni ssim. Donec
@@ -54,7 +57,9 @@
             </p>
           </li>
           <li class="services-item">
-            <svg class="services-img" width="39" heigth="38"><use href="./image/symbol-defs.svg#icon-laptop"></use></svg>
+            <svg class="services-icon">
+              <use href="./image/symbol-defs.svg#icon-laptop">
+            </svg>
             <h3 class="services-subtitle">Responsive Web</h3>
             <p class="services-description">
               Proin iaculis purus consequat sem cure digni ssim. Donec
@@ -63,7 +68,9 @@
             </p>
           </li>
           <li class="services-item">
-            <svg class="services-img" width="39" heigth="38"><use href="./image/symbol-defs.svg#icon-lock"></use></svg>
+            <svg class="services-icon">
+              <use href="./image/symbol-defs.svg#icon-lock"></use>
+            </svg>
             <h3 class="services-subtitle">Web Security</h3>
             <p class="services-description">
               Proin iaculis purus consequat sem cure digni ssim. Donec
@@ -78,27 +85,23 @@
     <section class="contact">
       <div class="container contact-container">
         <h2 class="contact-title">CONTACT US</h2>
-        <form class="contact-form" name="contact_us_form">
-          <ul class="contact-form-list">
-            <li class="contact-form-item">
+        <div class="contact-wrapper">
+          <form class="contact-form" name="contact_us_form">
+            <div class="contact-form-wrapper">
               <label class="content-label">
                 <input type="text" placeholder="YOUR NAME*" class="contact-input" />
               </label>
-            </li>
-            <li class="contact-form-item">
-              <label class="content-label">
-                <input type="email" placeholder="YOUR E-MAIL*" class="contact-input" />
-              </label>
-            </li>
-            <li class="contact-form-item">
-              <label class="content-label">
-                <input type="text" placeholder="SUBJECT" class="contact-input" />
-              </label>
-            </li>
-          </ul>
-          <textarea class="contact-textarea" placeholder="YOUR MESSAGE*"></textarea>
-        </form>
-        <button type="submit" class="contact-button" class="footer-button">
+                <label class="content-label">
+                  <input type="email" placeholder="YOUR E-MAIL*" class="contact-input" />
+                </label>
+                <label class="content-label">
+                  <input type="text" placeholder="SUBJECT" class="contact-input" />
+                </label>
+            </div>
+              <textarea class="contact-textarea" placeholder="YOUR MESSAGE*"></textarea>
+          </form>
+        </div>
+        <button type="submit" class="send-button" class="footer-button">
           SEND MESSAGE
         </button>
       </div>
