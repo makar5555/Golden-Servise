@@ -1,4 +1,6 @@
-
+*{
+    box-sizing: border-box;
+}
 :root {
     --font-family: "Montserrat", sans-serif;
     --second-family: "RobotoSlab", sans-serif;
@@ -36,9 +38,9 @@ body {
     font-family: var(--other-family);
     font-size: 36px;
     line-height: 41px;
-    font-weight: 400;
     letter-spacing: 1.3px;
     color: var(--header-text);
+    text-decoration: none;
 }
 
 .header-navigation-list {
@@ -104,6 +106,7 @@ body {
     font-weight: 400;
     font-family: var(--second-family);
     color: var(--services-description);
+    letter-spacing: -0.35px;
 }
 
 .services-span {
@@ -113,11 +116,7 @@ body {
     padding: 14px;
 }
 
-.contact-container {
-    display: flex;
-    flex-direction: column;
-    gap: 27px;
-}
+
 
 .contact {
     padding-top: 92px;
@@ -127,7 +126,6 @@ body {
 
 .contact-title {
     color: var(--contact-title);
-    padding-top: 92px;
     padding-bottom: 114px;
     text-align: center;
     font-size: 40px;
@@ -153,31 +151,30 @@ body {
     gap: 27px;
 }
 
+
 .contact-input {
     color: var(--placeholder-color);
-    padding: 12px 310px 21px 20px;
+    width: 455px;
+    padding: 12px 20px 21px 20px;
     font-size: 14px;
-    font-weight: 700;
     letter-spacing: -0.35px;
     border: 1px solid;
     border-radius: 3px;
     border-color: var(--placeholder-color);
+    font-weight: inherit;
+    line-height: 1;
 }
 
 input::placeholder {
     color: var(--placeholder-color);
-    color: var(--placeholder-color);
-    font-size: 14px;
-    font-weight: 700;
+    font-size: inherit;
     letter-spacing: -0.35px;
 }
 
 .contact-textarea::placeholder {
-    font-size: 14px;
+    font-size: inherit;
     color: var(--placeholder-color);
     letter-spacing: -0.35px;
-    font-weight: 700;
-    white-space: nowrap;
 }
 
 .contact-textarea {
@@ -199,4 +196,5 @@ input::placeholder {
     border: 0;
     cursor: pointer;
     margin-top: 27px;
+    font-family: var(--font-family);
 }
