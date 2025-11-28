@@ -15,6 +15,8 @@
 body {
     background-color: var(--contact-title);
     font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 14px;
 }
 
 .container {
@@ -48,7 +50,6 @@ body {
 
 .header-navigation-link {
     color: var(--header-text);
-    font-size: 14px;
     line-height: 41px;
     font-weight: 400;
     font-size: 14px;
@@ -63,7 +64,6 @@ body {
 
 .services-title {
     font-size: 40px;
-    font-weight: 700;
     line-height: 75px;
     letter-spacing: -1px;
     color: var(--services-title);
@@ -95,15 +95,14 @@ body {
 .services-subtitle {
     font-size: 18px;
     line-height: 75px;
-    font-weight: 700;
     letter-spacing: -0.45px;
 }
 
 .services-description {
-    font-size: 14px;
     font-weight: 400;
     font-family: var(--second-family);
     color: var(--services-description);
+    letter-spacing: -0.35px;
 }
 
 .services-span {
@@ -111,12 +110,6 @@ body {
     border: 1px solid var(--header-text);
     border-radius: 100%;
     padding: 14px;
-}
-
-.contact-container {
-    display: flex;
-    flex-direction: column;
-    gap: 27px;
 }
 
 .contact {
@@ -130,14 +123,13 @@ body {
     padding-bottom: 114px;
     text-align: center;
     font-size: 40px;
-    font-weight: 700;
     letter-spacing: -1px;
 }
 
 .contact-form {
     display: flex;
     gap: 27px;
-    align-items: center;
+    flex-direction: column;
 }
 
 .contact-wrapper {
@@ -154,37 +146,41 @@ body {
 
 .contact-input {
     color: var(--placeholder-color);
-    padding: 12px 310px 21px 20px;
+    width: 455px;
+    padding: 12px 20px 21px 20px;
     font-size: 14px;
-    font-weight: 700;
     letter-spacing: -0.35px;
     border: 1px solid;
     border-radius: 3px;
     border-color: var(--placeholder-color);
+    font-weight: inherit;
+    line-height: 1;
 }
 
 input::placeholder {
     color: var(--placeholder-color);
-    color: var(--placeholder-color);
-    font-size: 14px;
-    font-weight: 700;
+    font-size: inherit;
     letter-spacing: -0.35px;
 }
 
 .contact-textarea::placeholder {
-    font-size: 14px;
+    font-size: inherit;
     color: var(--placeholder-color);
     letter-spacing: -0.35px;
-    font-weight: 700;
-    white-space: nowrap;
 }
 
 .contact-textarea {
-    padding: 14px 286px 181px 22px;
+    padding-block: 14px;
+    padding-inline: 22px;
+    width: 458px;
+    height: 212px;
     border: 1px solid;
     border-color: var(--placeholder-color);
     border-radius: 2px;
     resize: none;
+    font-weight: inherit;
+    font-size: 14px;
+    font-family: inherit;
 }
 
 .send-button {
@@ -192,10 +188,10 @@ input::placeholder {
     background-color: var(--header-text);
     color: var(--contact-title);
     font-size: 18px;
-    font-weight: 700;
     letter-spacing: 0px;
-    padding: 18px 33px 28px 33px;
+    padding: 18px 46px 28px 46px;
     border: 0;
     cursor: pointer;
-    margin-top: 27px;
+    font-family: inherit;
+    font-weight: inherit;
 }
