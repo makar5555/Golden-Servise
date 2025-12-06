@@ -1,4 +1,3 @@
-
 :root {
     --font-family: "Montserrat", sans-serif;
     --second-family: "RobotoSlab", sans-serif;
@@ -82,14 +81,21 @@ body {
     flex-direction: column;
 }
 
-.services-icon {
-    fill: var(--header-text);
-    padding: 13px;
-    border: 3px solid var(--header-text);
+.services-wrapper {
     border-radius: 100%;
+    border: 3px solid var(--header-text);
     width: 70px;
     height: 69px;
     margin: 0 auto;
+}
+
+.services-icon {
+    fill: var(--header-text);
+    padding: 13px;
+    width: 31;
+    height: 40;
+
+
 }
 
 .services-subtitle {
