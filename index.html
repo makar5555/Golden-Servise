@@ -2,18 +2,18 @@
 <html lang="en">
 
 <head>
-  </div>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Golden Services</title>
-  <link rel="stylesheet" href="./css/normalize.css" />
-  <link href="./css/style.css" rel="stylesheet" />
+  <link href="css/reset.css" rel="stylesheet" />
+  <link href="css/style.css" rel="stylesheet" />
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
     rel="stylesheet" />
   <link
     href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto+Slab:wght@100..900&display=swap"
     rel="stylesheet" />
   <link href="https://fonts.googleapis.com/css2?family=Bilbo+Swash+Caps&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Droid+Serif" />
 </head>
 
 <body class="body">
@@ -48,9 +48,9 @@
         <ul class="services-list">
           <li class="services-item">
             <div class="services-wrapper">
-            <svg class="services-icon">
-              <use href="./image/symbol-defs.svg#icon-cest">
-            </svg>
+              <svg class="services-icon">
+                <use href="./image/symbol-defs.svg#icon-cest"></use>
+              </svg>
             </div>
             <h3 class="services-subtitle">E-Commerce</h3>
             <p class="services-description">
@@ -61,9 +61,9 @@
           </li>
           <li class="services-item">
             <div class="services-wrapper">
-            <svg class="services-icon">
-              <use href="./image/symbol-defs.svg#icon-laptop">
-            </svg>
+              <svg class="services-icon">
+                <use href="./image/symbol-defs.svg#icon-laptop"></use>
+              </svg>
             </div>
             <h3 class="services-subtitle">Responsive Web</h3>
             <p class="services-description">
@@ -74,9 +74,9 @@
           </li>
           <li class="services-item">
             <div class="services-wrapper">
-            <svg class="services-icon">
-              <use href="./image/symbol-defs.svg#icon-lock"></use>
-            </svg>
+              <svg class="services-icon">
+                <use href="./image/symbol-defs.svg#icon-lock"></use>
+              </svg>
             </div>
             <h3 class="services-subtitle">Web Security</h3>
             <p class="services-description">
@@ -88,32 +88,30 @@
         </ul>
       </div>
     </section>
-
     <section class="contact">
       <div class="container contact-container">
         <h2 class="contact-title">CONTACT US</h2>
-        <div class="contact-wrapper">
-          <form class="contact-form" name="contact_us_form">
+        <form class="contact-form" name="contact_us_form">
+          <div class="form-container">
             <div class="contact-form-wrapper">
               <label class="content-label">
                 <input type="text" placeholder="YOUR NAME*" class="contact-input" />
               </label>
-                <label class="content-label">
-                  <input type="email" placeholder="YOUR E-MAIL*" class="contact-input" />
-                </label>
-                <label class="content-label">
-                  <input type="text" placeholder="SUBJECT" class="contact-input" />
-                </label>
+              <label class="content-label">
+                <input type="email" placeholder="YOUR E-MAIL*" class="contact-input" />
+              </label>
+              <label class="content-label">
+                <input type="text" placeholder="SUBJECT" class="contact-input" />
+              </label>
             </div>
-              <textarea class="contact-textarea" placeholder="YOUR MESSAGE*"></textarea>
-          </form>
-        </div>
-        <button type="submit" class="send-button" class="footer-button">
-          SEND MESSAGE
-        </button>
+            <textarea class="contact-textarea" placeholder="YOUR MESSAGE*"></textarea>
+          </div>
+          <button type="submit" class="send-button">SEND MESSAGE</button>
+        </form>
       </div>
     </section>
   </main>
 </body>
 
 </html>
+<!-- Merry chismas by Makar -->
