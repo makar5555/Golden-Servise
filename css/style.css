@@ -104,11 +104,10 @@ body {
     width: 70px;
     height: 69px;
     margin: 0 auto;
+	padding: 13px;
 }
 .services-icon  {
 	fill: var(--button-color);
-	padding: 13px;
-	margin: 0 auto;
     width: 39px; 
     height: 38px;
 }
