@@ -100,11 +100,13 @@ body {
 
 .services-wrapper {
     border-radius: 100%;
+	display: flex;
     border: 3px solid var(--button-color);
     width: 70px;
-    height: 69px;
+    height: 70px;
     margin: 0 auto;
-	padding: 13px;
+	justify-content: center;
+	align-items: center;
 }
 .services-icon  {
 	fill: var(--button-color);
